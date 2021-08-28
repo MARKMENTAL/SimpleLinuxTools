@@ -1,0 +1,12 @@
+SimpleLinuxTools is a collection of scripts designed to make the process of doing system tasks on Linux easier.
+Program descriptions are listed below
+
+deb_bash_util: A C program to automate some handy tasks on Debian, specifically with  KDE, such as screenshots and APT
+
+fileutil: A C Program to automate file operations such as making and removing folders
+
+gethelp: A C program to get help for various command line utilities
+
+pyuseradd: A Python program to automate the process of adding users to a GNU/Linux system.
+
+
