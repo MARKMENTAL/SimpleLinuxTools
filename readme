@@ -3,6 +3,8 @@ Program descriptions are listed below
 
 deb_bash_util: A C program to automate some handy tasks on Debian, specifically with  KDE, such as screenshots and APT
 
+fed_bash_util: Same program as above but optimized for Fedora's file structure
+
 fileutil: A C Program to automate file operations such as making and removing folders
 
 gethelp: A C program to get help for various command line utilities
