@@ -11,4 +11,4 @@ gethelp: A C program to get help for various command line utilities
 
 pyuseradd: A Python program to automate the process of adding users to a GNU/Linux system.
 
-
+pytarer: A Python program to automate the process of extracting & compressing 'tar.gz' files
