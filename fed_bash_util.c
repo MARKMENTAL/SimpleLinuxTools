@@ -7,7 +7,7 @@ int main () {
    char package[30];
    int choice = 0;
  
-   printf("Choose a command to run\n1:Screenshot\n2:DNF Install\n3:DNF Remove\n4:Copy Backgrounds to Home Folder\n");
+   printf("Choose a command to run\n1:Screenshot\n2:DNF Install\n3:DNF Remove\n4:Copy Backgrounds to Home Folder\n5:DNF Update\n");
    scanf("%i", &choice);
    if (choice == 1){
       strcpy(command,"neofetch && spectacle"); 
@@ -30,6 +30,9 @@ int main () {
       strcpy(command, "mkdir /home/$USER");
       strcat(command, "/bgbackup ; sudo cp -r /usr/share/backgrounds /home/$USER");
       strcat(command,"/bgbackup");
+   }
+   else if(choice == 5){
+     strcpy(command, "sudo dnf update");
    }
    system(command);
    return(0);

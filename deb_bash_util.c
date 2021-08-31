@@ -7,7 +7,7 @@ int main () {
    char package[30];
    int choice = 0;
  
-   printf("Choose a command to run\n1:Screenshot\n2:APT Install\n3:APT Remove\n4:Copy Backgrounds to Home Folder\n");
+   printf("Choose a command to run\n1:Screenshot\n2:APT Install\n3:APT Remove\n4:Copy Backgrounds to Home Folder\n5:APT Update\n");
    scanf("%i", &choice);
    if (choice == 1){
       strcpy(command,"neofetch && spectacle"); 
@@ -17,7 +17,6 @@ int main () {
       printf("type the package name to install\n");
       scanf("%s",package);
       strcat(command, package);
- 
    }
    else if (choice == 3){
       strcpy(command, "sudo apt-get remove ");
@@ -31,6 +30,11 @@ int main () {
       strcat(command, "/bgbackup ; sudo cp -r /usr/share/wallpapers /home/$USER");
       strcat(command,"/bgbackup");
    }
+
+   else if (choice == 5){
+     strcpy(command, "sudo apt-get update");
+   }
+   
    system(command);
    return(0);
 }
