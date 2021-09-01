@@ -32,7 +32,7 @@ int main () {
    }
 
    else if (choice == 5){
-     strcpy(command, "sudo apt-get update");
+     strcpy(command, "sudo apt-get update && sudo apt-get upgrade");
    }
    
    system(command);
